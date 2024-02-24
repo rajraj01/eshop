@@ -17,9 +17,16 @@ steps:
 - task: DotnetcoreCLI@2
   inputs: 
     command: build
-    projects: '**/*.csproject'
+    projects: '**/*.csproj'
     arguments: '--no-restore'
   displayName: 'Dotnet Build'
+
+- task: DotnetcoreCLI@2
+  inputs: 
+    command: test
+    projects: '**/*test.csproj'
+    arguments: '--no-restore'
+  displayName: 'Run test cases'
 
 - task: DotnetcoreCLI@2
   inputs: 
