@@ -1,0 +1,31 @@
+name: dotnetwebbapp
+
+trigger:
+- master
+
+pool: 
+  vmimage: default
+
+steps: 
+- task: DotnetcoreCLI@2
+  inputs: 
+    command: 'restore'
+    projects: '**/*.csproj'
+    feedsToUse: 'select'
+  displayName: 'Restore Dotnet Package'
+
+- task: DotnetcoreCLI@2
+  inputs: 
+    command: build
+    projects: '**/*.csproject'
+    arguments: '--no-restore'
+  displayName: 'Dotnet Build'
+
+- task: DotnetcoreCLI@2
+  inputs: 
+    command: publish
+    publishWebProjects: true
+    projects: '**/*Customeapi.csproj'
+    arguments: '--configuration.$(buildconfiguration) --no-restore'
+    modifyOutputPath: true
+  displayName: 'publish'
