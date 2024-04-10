@@ -38,7 +38,7 @@ dotnet restore eShop.Web.slnf
 ```powershell
 dotnet run --project src/eShop.AppHost/eShop.AppHost.csproj
 ```
-then look for lines like this in the console output in order to find the URL to open the Aspire dashboard:
+then look for lines like this in the console output in order to find the URL to open the Aspire Dashboard:
 ```sh
 Now listening on: http://localhost:18848
 ```
