@@ -31,7 +31,7 @@ steps:
 - task: DotnetcoreCLI@2
   inputs: 
     command: publish
-    publishWebProjects: true
+    publishWebProjects: false
     projects: '**/*Customeapi.csproj'
     arguments: '--configuration.$(buildconfiguration) --no-restore'
     modifyOutputPath: true
