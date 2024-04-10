@@ -36,3 +36,4 @@ steps:
     arguments: '--configuration.$(buildconfiguration) --no-restore'
     modifyOutputPath: true
   displayName: 'publish'
+
