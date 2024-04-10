@@ -6,7 +6,7 @@ A reference .NET application implementing an eCommerce web site using a services
 
 ![eShop homepage screenshot](img/eshop_homepage.png)
 
-## Getting Started
+## Getting Started as per req
 
 ### Prerequisites
 
