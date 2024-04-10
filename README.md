@@ -53,4 +53,4 @@ For more information on contributing to this repo, please read [the contribution
 
 ### eShop on Azure
 
-For a version of this app configured for deployment on Azure, please view [the eShop on Azure](https://github.com/Azure-Samples/eShopOnAzure) repo.
+For a version of this app Configured for deployment on Azure, please view [the eShop on Azure](https://github.com/Azure-Samples/eShopOnAzure) repo.
